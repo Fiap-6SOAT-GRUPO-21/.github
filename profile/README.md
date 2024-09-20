@@ -47,23 +47,23 @@ Este projeto é parte do MBA da FIAP e envolve a criação de uma infraestrutura
 ## Utils
 
 1. **configurar o aws cli**:
-   aws lambda delete-function --function-name techchallenge-authorizer-lambda
+  - aws lambda delete-function --function-name techchallenge-authorizer-lambda
 
 2. **obter o endereço do api gateway**:
-   aws apigatewayv2 get-apis
+  - aws apigatewayv2 get-apis
 
 3. **Montar url para realizar login no cognito**:
-   https://<url_do_cognito>/login?response_type=code&client_id=<client_id>&redirect_uri=https://google.com
-   url_do_cognito = Entrar na aws na aba Cognito na aba de domains
-   client_id = Entrar na aws na aba Cognito na aba de domains no final vai ter o client_id
+  - https://<url_do_cognito>/login?response_type=code&client_id=<client_id>&redirect_uri=https://google.com
+  - url_do_cognito = Entrar na aws na aba Cognito na aba de domains
+  - client_id = Entrar na aws na aba Cognito na aba de domains no final vai ter o client_id
    
 3. **Login no Cognito com usuario defautl**:
-   username     = "Teste"
-   password     = "Teste123!"
+  - username     = "Teste"
+  - password     = "Teste123!"
 
 3. **Obter Token**:
-   Ao ser redirecionado para o google ira um parametro "CODE" chame a req abaixo para obter o token
-   curl --location 'https://url_do_cognito/oauth2/token' \
+   - Ao ser redirecionado para o google ira um parametro "CODE" chame a req abaixo para obter o token
+   - curl --location 'https://url_do_cognito/oauth2/token' \
       --header 'Content-Type: application/x-www-form-urlencoded' \
       --data-urlencode 'grant_type=authorization_code' \
       --data-urlencode 'code=CODE' \
