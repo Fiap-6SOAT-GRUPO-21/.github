@@ -71,6 +71,8 @@ Este projeto é parte do MBA da FIAP e envolve a criação de uma infraestrutura
       --data-urlencode 'redirect_uri=https://google.com' \
       --data-urlencode 'client_id=client_id'
 
+4. **Todas as req é nescessario passar authorization retornado do passo 3**:
+
 ## Não esqueca de executar a pipe de Terraform Destroy localizado no repo de "infra" no qual destroy todos os passos anteriores
 
 
