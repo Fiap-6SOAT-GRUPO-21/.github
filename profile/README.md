@@ -29,17 +29,18 @@ Este projeto é parte do MBA da FIAP e envolve a criação de uma infraestrutura
    - O pipeline irá executar os comandos de kubectl apply para subir a aplicação.
 2. **Com isso ja é possivel rodar os comandos de kubectl local**:     
 
-### 4. Cognito
-
-1. **Execute o pipeline do Cognito**:
-   - O pipeline irá executar `terraform apply` para provisionar o cognito.
-  
 ### 4. Authorizer lambda
 
 1. **Execute o pipeline do authorizer-lambda**:
    - O pipeline irá executar `terraform apply` para provisionar a lambda de authenticação.
 
-### 5. API Gateway
+### 5. Cognito
+
+1. **Execute o pipeline do Cognito**:
+   - O pipeline irá executar `terraform apply` para provisionar o cognito.
+  
+
+### 6. API Gateway
 
 1. **Execute o pipeline de API Gateway**:
    - O pipeline irá executar `terraform apply` para provisionar o API Gateway.
