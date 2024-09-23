@@ -55,8 +55,8 @@ Este projeto é parte do MBA da FIAP e envolve a criação de uma infraestrutura
 
 3. **Montar url para realizar login no cognito**:
   - https://<url_do_cognito>/login?response_type=code&client_id=<client_id>&redirect_uri=https://google.com
-  - url_do_cognito = Entrar na aws na aba Cognito na aba de domains
-  - client_id = Entrar na aws na aba Cognito na aba de domains no final vai ter o client_id
+  - url_do_cognito = Entrar na aws na aba Cognito na aba de Integração da aplicação, em Domínio do Cognito
+  - client_id = Entrar na aws na aba Cognito na aba de Integração da aplicação, em Análise e clientes de aplicação
    
 3. **Login no Cognito com usuario defautl**:
   - username     = "Teste"
