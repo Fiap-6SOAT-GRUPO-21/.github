@@ -48,7 +48,7 @@ Este projeto é parte do MBA da FIAP e envolve a criação de uma infraestrutura
 ## Utils
 
 1. **configurar o aws cli**:
-  - aws lambda delete-function --function-name techchallenge-authorizer-lambda
+  - aws eks --region us-east-1 update-kubeconfig --name techchallenge
 
 2. **obter o endereço do api gateway**:
   - aws apigatewayv2 get-apis
