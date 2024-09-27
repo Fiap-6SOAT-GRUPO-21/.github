@@ -4,12 +4,54 @@
 
 Este projeto é parte do MBA da FIAP e envolve a criação de uma infraestrutura na AWS utilizando Terraform, incluindo a configuração de VPC, EKS, RDS, API Gateway e Lambda. A aplicação principal é uma API de gerenciamento de pedidos desenvolvida em Java, que é implantada em um cluster Kubernetes.
 
+Todo provisionamento foi feito asssumindo-se que AWS Academy está sendo utilizado.  AWS Academy não permite a criação de IAM roles ou qualquer outro recurso relacioado a AWS IAM. Sendo assim, em todos os módulos é utilizado o role LabRole pre-existente na AWS Academy.
+
+
+### Diagrama de Arquitetura (Fase 2)
+
+Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os componentes principais da aplicação:
+
+![Diagrama de Arquitetura](image/tech_challenge_architecture.svg)
+
+### Video de apresentação da arquitetura do projeto (Fase 2)
+
+[![Video de Apresentação da Arquitetura](https://img.youtube.com/vi/7pZ2tByl9t8/0.jpg)](https://www.youtube.com/watch?v=7pZ2tByl9t8)
+
+### Video de apresentação da arquitetura do projeto (Fase 3)
+
+[![Video de Apresentação da Arquitetura](https://img.youtube.com/vi/MuOje_GppsU/0.jpg)](https://youtu.be/MuOje_GppsU)
+### Estrutura do banco de dados (Fase 3)
+
+![img.png](image%2Fimg.png)
+
+### Documentação do banco de dados (Fase 3)
+
+[PostgreSQL e RDS.pdf](..%2Fpdf%2FPostgreSQL%20e%20RDS.pdf)
+
+### Tecnologias Utilizadas
+
+- **Java 21**
+- **Maven 3.8.6**
+- **Spring Boot**
+- **Hibernate**
+- **ModelMapper**
+- **Docker**
+- **Kubernetes**
+- **Postgres**
+- **Terraform**
+- **AWS**
+- **API Gateway**
+- **Lambda**
+- **Cognito**
+- **RDS**
+- **VPC**
+
 ## Passo a Passo para Subir Tudo via Pipeline espere sempre uma pipe terminar para executar a outra
 
-### 1. Infraestrutura (VPC - EKS)
+### 1. Infra
 
 1. **Inicialize o laboratório no AWS Academy.**
-2. **Crie um bucket S3** para armazenar o estado do Terraform. O nome do bucket deve ser "bucketterraformfiap".
+2. **Crie um bucket S3** para armazenar o estado do Terraform. O nome do bucket deve ser "bucketterraformfiap". Ou altere o nome do bucket nas secrets da organização.
 3. **Atualize as secrets da organização** com as credenciais obtidas no AWS Academy.
 4. **Execute o pipeline de infraestrutura**:
    - O pipeline irá executar `terraform apply` para provisionar a VPC e o cluster EKS.
