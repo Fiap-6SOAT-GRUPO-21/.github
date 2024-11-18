@@ -71,18 +71,30 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
    - O pipeline irá executar os comandos de kubectl apply para subir a aplicação.
 2. **Com isso ja é possivel rodar os comandos de kubectl local**:     
 
-### 4. Cognito
+### 4. API ORDER
+
+1. **Execute o pipeline de API ORDER**:
+   - O pipeline irá executar os comandos de kubectl apply para subir a aplicação.
+2. **Com isso ja é possivel rodar os comandos de kubectl local**:
+
+### 5. API PAYMENTS
+
+1. **Execute o pipeline de API PAYMENTS**:
+   - O pipeline irá executar os comandos de kubectl apply para subir a aplicação.
+2. **Com isso ja é possivel rodar os comandos de kubectl local**:     
+
+### 6. Cognito
 
 1. **Execute o pipeline do Cognito**:
    - O pipeline irá executar `terraform apply` para provisionar o cognito.
 
-### 5. Authorizer lambda
+### 7. Authorizer lambda
 
 1. **Execute o pipeline do authorizer-lambda**:
    - O pipeline irá executar `terraform apply` para provisionar a lambda de authenticação.
 
 
-### 6. API Gateway
+### 8. API Gateway
 
 1. **Execute o pipeline de API Gateway**:
    - O pipeline irá executar `terraform apply` para provisionar o API Gateway.
