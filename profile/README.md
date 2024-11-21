@@ -65,20 +65,26 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
    - O pipeline irá executar `terraform apply` para provisionar a instância de RDS.
 2. **Configure as credenciais do cluster EKS** na sua máquina:
 
+### 4. MongoDB Atlas
+
+1. **Execute o pipeline do MongoDb-Atlas**:
+   - O pipeline irá executar `terraform apply` para provisionar a instância de RDS.
+2. Este é o unico recurso que não é destruido no pipeline de destroy do infra, para destruir rode o pipeline de destroy do MongoDb-Atlas:
+
 ### 3. API FOOD
 
-1. **Execute o pipeline de API FOOD**:
+1. **Execute o pipeline de API FOOD** espere a pipe terminar para executar a prox:
    - O pipeline irá executar os comandos de kubectl apply para subir a aplicação.
 2. **Com isso ja é possivel rodar os comandos de kubectl local**:     
 
 ### 4. Cognito
 
-1. **Execute o pipeline do Cognito**:
+1. **Execute o pipeline do Cognito** espere a pipe terminar para executar a prox****:
    - O pipeline irá executar `terraform apply` para provisionar o cognito.
 
 ### 5. Authorizer lambda
 
-1. **Execute o pipeline do authorizer-lambda**:
+1. **Execute o pipeline do authorizer-lambda** espere a pipe terminar para executar a prox:
    - O pipeline irá executar `terraform apply` para provisionar a lambda de authenticação.
 
 
@@ -115,7 +121,7 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
 
 4. **Todas as req é nescessario passar authorization retornado do passo 3**:
 
-## Não esqueca de executar a pipe de Terraform Destroy localizado no repo de "infra" no qual destroy todos os passos anteriores
+## Não esqueca de executar a pipe de Terraform Destroy localizado no repo de "infra" no qual destroy todos os recusos criados menos o MongoDB Atlas que deve ser destruido pelo pipeline de destroy do MongoDb-Atlas dentro do repo de "mongodb-atlas"
 
 
 
