@@ -20,6 +20,7 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
 ### Video de apresentação da arquitetura do projeto (Fase 3)
 
 [![Video de Apresentação da Arquitetura](https://img.youtube.com/vi/MuOje_GppsU/0.jpg)](https://youtu.be/MuOje_GppsU)
+
 ### Estrutura do banco de dados (Fase 3)
 
 ![img.png](image%2Fimg.png)
@@ -27,6 +28,10 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
 ### Documentação do banco de dados (Fase 3)
 
 [PostgreSQL e RDS.pdf](..%2Fpdf%2FPostgreSQL%20e%20RDS.pdf)
+
+### Video de apresentação do projeto (Fase 4)
+
+[![Video de Apresentação da Arquitetura](https://img.youtube.com/vi/MuOje_GppsU/0.jpg)](https://www.youtube.com/watch?v=NqZXG8bX308)
 
 ### Tecnologias Utilizadas
 
