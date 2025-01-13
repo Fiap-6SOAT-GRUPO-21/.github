@@ -37,7 +37,13 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
    - O pipeline irá executar `terraform apply` para provisionar a instância de RDS.
 2. **Configure as credenciais do cluster EKS** na sua máquina:
 
-### 3. API: [Hacka Msc Mgmt Media](https://github.com/Fiap-6SOAT-GRUPO-21/hacka-msc-mgmt-media)
+### 3. Amazon- SQS [Hacka Amazon-SQS](https://github.com/Fiap-6SOAT-GRUPO-21/hacka-infra-sqs)
+
+1. **Execute o pipeline de SQS** espere a pipe terminar para executar a prox:
+   - O pipeline irá executar os comandos de kubectl apply para subir a aplicação.
+2. **Com isso ja é possivel rodar os comandos de kubectl local**:
+
+### 4. API: [Hacka Msc Mgmt Media](https://github.com/Fiap-6SOAT-GRUPO-21/hacka-msc-mgmt-media)
 
 1. **Execute o pipeline de hacka-msc-mgmt-media** espere a pipe terminar para executar a prox:
    - O pipeline irá executar os comandos de kubectl apply para subir a aplicação.
