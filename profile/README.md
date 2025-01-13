@@ -111,6 +111,8 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
     - MSC Pcs Midia: https://<url_do_api_gateway-Passo-2>/pcs-midia/actuator/health
 
 ## Não esqueca de executar a pipe de Terraform Destroy localizado no repo de "infra" no qual destroy todos os recusos criados
+### [Pipe de Destroy](https://github.com/Fiap-6SOAT-GRUPO-21/hacka-infra-eks/actions/workflows/destroy.yml)
+
 
 # Fases Tech Challenge
 
