@@ -96,8 +96,15 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
 
 4. **Todas as req é nescessario passar authorization retornado do passo 3**:
 
-## Não esqueca de executar a pipe de Terraform Destroy localizado no repo de "infra" no qual destroy todos os recusos criados
+5. **As API de MSC Mgmt Media e MSC Pcs Midia possuem um path default para acessar sendo eles**:
+    - MSC Mgmt Media: /mgmt-media
+    - MSC Pcs Midia: /pcs-midia
 
+6. **Urls de healthcheck das API**:
+    - MSC Mgmt Media: https://<url_do_api_gateway-Passo-2>/mgmt-media/actuator/health
+    - MSC Pcs Midia: https://<url_do_api_gateway-Passo-2>/pcs-midia/actuator/health
+
+## Não esqueca de executar a pipe de Terraform Destroy localizado no repo de "infra" no qual destroy todos os recusos criados
 
 # Fases Tech Challenge
 
