@@ -88,7 +88,7 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
 
 
 3. **Login no Cognito com usuario defautl**:
-- username     = "Teste"
+- username     = "+5517996197451"
 - password     = "Teste123!"
 
 3. **Obter Token**:
