@@ -23,7 +23,8 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
 ### 1. Infra [Hacka Infra EKS](https://github.com/Fiap-6SOAT-GRUPO-21/hacka-infra-eks)
 
 1. **Inicialize o laboratório no AWS Academy.**
-2. **Crie um bucket S3** para armazenar o estado do Terraform. O nome do bucket deve ser "bucketterraformfiap". Ou altere o nome do bucket nas secrets da organização.
+2. **Crie um bucket S3** para armazenar o estado do Terraform. O nome do bucket deve ser "bucketterraformfiap". Ou altere o nome do bucket nas secrets da organização (AWS_BUCKET_NAME).
+3. **Crie um bucket s3** para armazenar os videos a serem processados. O nome do bucket deve ser "media-files-002". Ou altere o nome do bucket nas secrets da organização (HACKA_BUCKET_NAME_MEDIA_FILES).
 3. **Atualize as secrets da organização** com as credenciais obtidas no AWS Academy.
 4. **Execute o pipeline de infraestrutura**:
    - O pipeline irá executar `terraform apply` para provisionar a VPC e o cluster EKS.
