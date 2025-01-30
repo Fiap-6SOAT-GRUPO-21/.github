@@ -10,13 +10,24 @@ Abaixo contem as duas fases do projeto, a primeira é o Hackathon e a segunda é
 
 # Fases Hackathon
 
+### Video de apresentação do hackathon
+//todo adicionar video
+
 ### Obs: Todos os projetos referente a essa fase do Hackathon são os repositorios que iniciam com o nome "hacka"
 
 ### Diagrama de Arquitetura
 
 Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os componentes principais da aplicação:
+![img.png](image/img55.png)
 
+### Link: [Event Storming - Processamento De Arquivos](https://miro.com/app/board/uXjVKXjixqA=/?share_link_id=332305603387)
 
+### Documentação do Projeto
+[Documentação do Projeto Hackathon FIAP X.pdf](../entrega/Documenta%C3%A7%C3%A3o%20do%20Projeto%20Hackathon%20FIAP%20X.pdf)
+
+### Drianagrama de sequencia
+![img.png](image/img88.png)
+[hackaton.drawio](../entrega/hackaton.drawio)
 
 ## Passo a Passo para Subir Tudo via Pipeline espere sempre uma pipe terminar para executar a outra
 
