@@ -11,7 +11,7 @@ Abaixo contem as duas fases do projeto, a primeira é o Hackathon e a segunda é
 # Fases Hackathon
 
 ### Video de apresentação do hackathon
-//todo adicionar video
+[![Video de Apresentação da Arquitetura](https://img.youtube.com/vi/7pZ2tByl9t8/0.jpg)](https://www.youtube.com/watch?v=4PEavtPv1lY)
 
 ### Obs: Todos os projetos referente a essa fase do Hackathon são os repositorios que iniciam com o nome "hacka"
 
@@ -23,7 +23,7 @@ Abaixo está o diagrama de arquitetura do projeto, que ilustra a estrutura e os 
 ### Link: [Event Storming - Processamento De Arquivos](https://miro.com/app/board/uXjVKXjixqA=/?share_link_id=332305603387)
 
 ### Documentação do Projeto
-[Documentação do Projeto Hackathon FIAP X.pdf](../entrega/Documenta%C3%A7%C3%A3o%20do%20Projeto%20Hackathon%20FIAP%20X.pdf)
+[Documentação do Projeto Hackathon FIAP X.pdf]([Documentação do Projeto Hackathon FIAP X.pdf](../entrega/Documenta%C3%A7%C3%A3o%20do%20Projeto%20Hackathon%20FIAP%20X.pdf))
 
 ### Drianagrama de sequencia
 ![img.png](image/img88.png)
